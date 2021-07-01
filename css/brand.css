@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+@import url(common.css);
+
+
+
+.about-us{
+    width:100%; margin:0 auto;
+    height:100vh;
+    position:relative;
+}
+
+.about-us .title{
+    margin:0 10% 0;
+    text-align: center;
+    padding-top:80px;
+}
+.about-us .title h2{
+    margin:35px auto 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size:2rem;
+    color:#6f7071;
+}
+.about-us .title p{
+    font-size:1rem;
+    font-weight:lighter;
+    color:#a8a9ab;
+}
+.about-us .title p::after{
+    content:'';
+    width:60px; height:5px;
+    position:absolute;
+    left:50%;
+    background-color:#c40352;
+    margin:60px auto 100px;
+    transform:translateX(-50%);
+    display: inline-block;
+
+}
+.about-us .aboutus-mn{
+    position:relative;
+    left:0; top:0;
+    margin:10px 0;
+}
+
+.about-us .aboutus-mn > ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#fff;
+    width:70%;
+    margin:100px auto 50px;
+}
+.about-us .aboutus-mn::after{
+    content:'';
+    position:absolute; left:0; top:50%;
+    display:inline-block;
+    background-color: #a8a9ab;
+    width:100%;
+    height:1px;
+    transform: translateY(100%);
+    z-index:-1;
+}
+.about-us .aboutus-mn > ul > li{
+    font-weight:lighter;
+    color:#6f7071;
+    font-size:1rem;
+    font-weight: 300;
+}
+.about-us .aboutus-mn > ul > li:hover a{
+    color:#c40352;
+}

@@ -437,7 +437,6 @@
 }
 .home-con3 .container4 .video-form > a > span{
     font-size:1.1rem;
-    font-weight:400;
     color:#6D6E71;
 }
 .home-con3 .video-bg{
@@ -603,6 +602,16 @@ footer{
     left:0; top:0;
     margin:80px 0 50px;
 }
+.footer-mn1::after{
+    content:'';
+    position:absolute; left:0; top:50%;
+    display:inline-block;
+    background-color: #a8a9ab;
+    width:100%;
+    height:1px;
+    transform: translateY(100%);
+    z-index:-1;
+}
 
 .footer-mn1 > ul{
     display:flex;
@@ -630,7 +639,7 @@ footer{
 .footer-mn2{
     position:relative;
     left: 0; top:0;
-    width:100%; height:150px;
+    width:100%; height:120px;
     background-color:#c40452;
 }
 .footer-mn2 ul{
@@ -639,10 +648,18 @@ footer{
     justify-content: center;
 }
 .footer-mn2 ul li{
-    border-right:0.3px solid #fff;
     padding:0 7.5%;
-    margin-top:30px;
+    margin-top:20px;
+    position:relative;
 }
+.footer-mn2 ul li::after{
+    content:'';
+    position:absolute;
+    right:0; top:10%;
+    border-right:1px solid #ddd;
+    width:1px; height:70px;
+}
+.footer-mn2 ul li:last-child::after{border:none;}
 
 .footer-mn2 ul li .counsel{
     display:flex;

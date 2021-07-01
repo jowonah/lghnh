@@ -1,0 +1,606 @@
+@charset 'UTF-8';
+@import url(common.css);
+
+
+
+
+/* company2,3,4 display:none; 처리해놨음 > 자바 들어갈때 버튼 누르면 나올 수 있도록 처리할 예정 */
+
+
+
+/* ------------------------------------main */
+.company1{
+    width:100%; margin:0 auto;
+    height:100vh;
+    position:relative;
+}
+
+
+.company1 .title{
+    margin:0 10% 0;
+    text-align: center;
+    padding-top:80px;
+}
+.company1 .title h2{
+    margin:35px auto 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size:2rem;
+    color:#6f7071;
+}
+.company1 .title p{
+    font-size:1rem;
+    font-weight:lighter;
+    color:#a8a9ab;
+}
+.company1 .title p::after{
+    content:'';
+    width:60px; height:5px;
+    position:absolute;
+    left:50%;
+    background-color:#c40352;
+    margin:60px auto 100px;
+    transform:translateX(-50%);
+    display: inline-block;
+
+}
+
+
+.company1 .aboutus-mn{
+    position:relative;
+    left:0; top:0;
+    margin:10px 0;
+}
+.company1 .aboutus-mn > ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#fff;
+    width:70%;
+    margin:100px auto 50px;
+}
+.company1 .aboutus-mn::after{
+    content:'';
+    position:absolute; left:0; top:50%;
+    display:inline-block;
+    background-color: #a8a9ab;
+    width:100%;
+    height:1px;
+    transform: translateY(100%);
+    z-index:-1;
+}
+.company1 .aboutus-mn > ul > li{
+    font-weight:lighter;
+    color:#6f7071;
+    font-size:1rem;
+    font-weight: 300;
+}
+.company1 .aboutus-mn > ul > li:hover a{
+    color:#c40352;
+}
+
+
+.company1 .container1 > figure{
+    width:100%;
+    position:relative;
+    left:0; top:0;
+}
+
+.company1 .container1 > figure > img{
+    width:100%; height:62vh;
+    z-index: -2;
+}
+.company1 .container1 > figure > figcaption{
+    margin-left: 15%;
+    color:#fff;
+    transform:translateY(-113%);
+}
+.company1 .container1 > figure > figcaption > h1{
+    margin-bottom:1vh;
+    font-size: 2rem;
+    color:#c40352;
+}
+.company1 .container1 > figure > figcaption > p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom:28vh;
+}
+.company1 .container1 > figure > figcaption > span{
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+.company2{
+    width:100%; margin:0 auto;
+    height:100vh;
+    position:relative;
+    display:none;
+}
+
+
+.company2-mn{
+    width:70%; 
+    margin:0 auto;
+}
+.company2-mn ul{
+    display:flex;
+    justify-content:space-between;
+    padding-top:10vh;
+    
+}
+.company2-mn ul > li{
+    position:relative;
+    left:0; top:0;
+    width:11vw;
+}
+.company2-mn ul > li > h3{
+    margin-bottom:2vh;
+    font-size:1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:800;
+    color:#6d6f72;
+}
+.company2-mn ul > li > p{
+    font-size:1rem;
+    color:#6d6f72;
+}
+.company2-mn ul > li > a{
+    position:absolute;
+    right:0; top:0;
+    transform:translateY(-8%);
+}
+.company2-mn ul > li > a >img{
+    width:40px;
+}
+.company2-mn ul > li::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company2-mn ul > li:hover::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(100%);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company2-mn ul > li > a:hover{
+    color:#c40352;
+}
+
+
+
+.company2 .container2{
+    width:70%;
+    margin:120px auto;
+    display:flex;
+}
+.company2 .container2 figure{
+    position:relative;
+    left:0; top:0;
+    margin-left:7%;
+}
+.company2 .container2 figure img{
+    width:500px;
+}
+.company2 .container2 > div{
+    position:absolute;
+    right:0;
+    margin-right:20%;
+    text-align: right;
+}
+.company2 .container2 > div > h1{
+    text-align: left;
+    padding-left:70px;
+    margin-bottom:160px;
+    font-size:3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    color:#c40352;
+}
+.company2 .container2 > div > p{
+    padding:0px 50px 50px 0;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#6d6f72;
+}
+.company2 .container2 > div > span{
+    display:block;
+    background-color:#fffaf2;
+    padding:50px;
+    font-size:.9rem;
+    color:#6d6f72;
+    line-height:1.8rem;
+}
+.company2 .container2 > div > span > strong{
+    font-size:1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.company3{
+    width:100%; margin:0 auto;
+    height:100vh;
+    position:relative;
+    display:none;
+}
+
+
+.company3 .company3-mn{
+    width:70%; 
+    margin:0 auto;
+}
+.company3 .company3-mn ul{
+    display:flex;
+    justify-content:space-between;
+    padding-top:10vh;
+    
+}
+.company3 .company3-mn ul > li{
+    position:relative;
+    left:0; top:0;
+    width:11vw;
+}
+.company3 .company3-mn ul > li > h3{
+    margin-bottom:2vh;
+    font-size:1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:800;
+    color:#6d6f72;
+}
+.company3 .company3-mn ul > li > p{
+    font-size:1rem;
+    color:#6d6f72;
+}
+.company3 .company3-mn ul > li > a{
+    position:absolute;
+    right:0; top:0;
+    transform:translateY(-8%);
+}
+.company3 .company3-mn ul > li > a >img{
+    width:40px;
+}
+.company3 .company3-mn ul > li::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company3 .company3-mn ul > li:hover::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(100%);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company3 .company3-mn ul > li > a:hover{
+    color:#c40352;
+}
+
+
+
+.company3 .container3{
+    width:70%;
+    margin:120px auto;
+    text-align: right;
+}
+.company3 .container3 figure{
+    position:relative;
+    right:0; top:0;
+    margin-right:7%;
+    z-index: -1;
+}
+.company3 .container3 figure img{
+    width:500px;
+}
+.company3 .container3 > div{
+    position:absolute;
+    left:0;
+    margin-left:20%;
+    text-align: left;
+}
+.company3 .container3 > div > h1{
+    text-align: right;
+    padding-right:90px;
+    margin-bottom:140px;
+    font-size:3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    color:#c40352;
+}
+.company3 .container3 > div > p{
+    padding:2rem 0px 50px 50px;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#6d6f72;
+}
+.company3 .container3 > div > span{
+    display:block;
+    background-color:#a7a9ac;
+    padding:50px;
+    font-size:.9rem;
+    color:#fff;
+    line-height:1.8rem;
+}
+.company3 .container3 > div > span > strong{
+    font-size:1.1rem;
+}
+
+
+
+
+
+
+
+
+.company4{
+    width:100%; margin:0 auto;
+    height:100vh;
+    position:relative;
+    display:none;
+}
+
+
+.company4-mn{
+    width:70%; 
+    margin:0 auto;
+}
+.company4-mn ul{
+    display:flex;
+    justify-content:space-between;
+    padding-top:10vh;
+    
+}
+.company4-mn ul > li{
+    position:relative;
+    left:0; top:0;
+    width:11vw;
+}
+.company4-mn ul > li > h3{
+    margin-bottom:2vh;
+    font-size:1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:800;
+    color:#6d6f72;
+}
+.company4-mn ul > li > p{
+    font-size:1rem;
+    color:#6d6f72;
+}
+.company4-mn ul > li > a{
+    position:absolute;
+    right:0; top:0;
+    transform:translateY(-8%);
+}
+.company4-mn ul > li > a >img{
+    width:40px;
+}
+.company4-mn ul > li::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company4-mn ul > li:hover::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(100%);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company4-mn ul > li > a:hover{
+    color:#c40352;
+}
+
+
+
+.company4 .container4{
+    width:70%;
+    margin:120px auto;
+    display:flex;
+}
+.company4 .container4 figure{
+    position:relative;
+    left:0; top:0;
+    margin-left:7%;
+}
+.company4 .container4 figure img{
+    width:500px;
+}
+.company4 .container4 > div{
+    position:absolute;
+    right:0;
+    margin-right:20%;
+    text-align: right;
+}
+.company4 .container4 > div > h1{
+    text-align: left;
+    padding-left:70px;
+    margin-bottom:50px;
+    font-size:3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    color:#c40352;
+}
+.company4 .container4 > div > p{
+    padding:0px 50px 50px 0;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#6d6f72;
+}
+.company4 .container4 > div > span{
+    display:block;
+    background-color:#fffaf2;
+    padding:50px 50px 50px 100px;
+    font-size:.9rem;
+    color:#6d6f72;
+    line-height:1.8rem;
+}
+.company4 .container4 > div > span > strong{
+    font-size:1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.company4{
+    width:100%; margin:0 auto;
+    height:100vh;
+    position:relative;
+    display:none;
+}
+
+
+.company5-mn{
+    width:70%; 
+    margin:0 auto;
+}
+.company5-mn ul{
+    display:flex;
+    justify-content:space-between;
+    padding-top:10vh;
+    
+}
+.company5-mn ul > li{
+    position:relative;
+    left:0; top:0;
+    width:11vw;
+}
+.company5-mn ul > li > h3{
+    margin-bottom:2vh;
+    font-size:1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:800;
+    color:#6d6f72;
+}
+.company5-mn ul > li > p{
+    font-size:1rem;
+    color:#6d6f72;
+}
+.company5-mn ul > li > a{
+    position:absolute;
+    right:0; top:0;
+    transform:translateY(-8%);
+}
+.company5-mn ul > li > a >img{
+    width:40px;
+}
+.company5-mn ul > li::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company5-mn ul > li:hover::after{
+    content: '';
+    display: block;
+    padding-top: 8px;
+    transform: scaleX(100%);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+    border-bottom: 3px solid #c40352;
+}
+.company5-mn ul > li > a:hover{
+    color:#c40352;
+}
+
+
+
+.company5 .container5{
+    width:70%;
+    margin:120px auto;
+}
+.company5 .container5 > div{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.company5 .container5 > div > h1{
+    text-align: left;
+    padding-left:100px;
+    font-size:3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    color:#c40352;
+}
+.company5 .container5 > div > p{
+    padding:0px 100px 0px 0;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#6d6f72;
+}
+
+
+
+.company5 .container5 table{
+    width:100%;
+    margin:50px auto 200px;
+    border-collapse: collapse;
+    font-size:.85rem;
+    color:#6d6f72;
+}
+.company5 .container5 table tr .cn{ 
+    text-align:center;
+    width:35%;
+    padding:15px 10px; 
+    border:1px solid #a7a9ac;
+    border-width:1px 1px 1px 0;
+}
+.company5 .container5 table tr .cp{ 
+    text-align:center;
+    width:15%;
+    padding:10px; 
+    border:1px solid #a7a9ac;
+    border-width:1px 1px 1px 0;
+}
+.company5 .container5 table tr:nth-child(1){
+    border:1px solid #c40352;
+    border-width:2px 0 0px 0;
+} 
+.company5 .container5 table tr:nth-child(6){
+    border:1px solid #c40352;
+    border-width:0px 0 2px 0;
+} 
+.company5 .container5 table tr .cp:last-child{
+    border-width:1px 0px 1px 0;
+
+} 
