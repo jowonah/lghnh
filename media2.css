@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+@import url(common.css);
+
+
+
+.adver1{
+    width:100%; margin:0 auto;
+    position:relative;
+}
+
+.adver1 .title{
+    margin:0 10% 0;
+    text-align: center;
+    padding-top:80px;
+}
+.adver1 .title h2{
+    margin:35px auto 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size:2rem;
+    color:#6f7071;
+}
+.adver1 .title p{
+    font-size:1rem;
+    font-weight:lighter;
+    color:#a8a9ab;
+}
+.adver1 .title p::after{
+    content:'';
+    width:60px; height:5px;
+    position:absolute;
+    left:50%;
+    background-color:#c40352;
+    margin:60px auto 100px;
+    transform:translateX(-50%);
+    display: inline-block;
+
+}
+.adver1 .adver1-mn{
+    position:relative;
+    left:0; top:0;
+    margin:10px 0;
+}
+
+.adver1 .adver1-mn > ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#fff;
+    width:70%;
+    margin:100px auto 50px;
+}
+.adver1 .adver1-mn::after{
+    content:'';
+    position:absolute; left:0; top:50%;
+    display:inline-block;
+    background-color: #a8a9ab;
+    width:100%;
+    height:1px;
+    transform: translateY(100%);
+    z-index:-1;
+}
+.adver1 .adver1-mn > ul > li{
+    font-weight:lighter;
+    color:#6f7071;
+    font-size:1rem;
+    font-weight: 300;
+}
+.adver1 .adver1-mn > ul > li:hover a{
+    color:#c40352;
+}
+
+
+
+
+
+
+
+
+.adver1 .container1{width:70%; margin:0 auto;}
+
+.adver1 .container1 .video{
+    margin:140px auto;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    z-index:1;
+}
+.adver1 .container1 .video li{
+    text-align: center;
+    position:relative;
+    left: 0; top:0;
+    margin:0 auto 90px;
+}
+.adver1 .container1 .video-form > a{
+    display:block;
+    font-size:1.1rem;
+    font-weight:600;
+    color:#c40352;
+    margin-bottom:10px;
+}
+.adver1 .container1 .video-form > a > span{
+    font-size:1.1rem;
+    color:#6D6E71;
+}
