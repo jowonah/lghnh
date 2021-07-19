@@ -8,10 +8,12 @@
 /* home-intro: 메인광고부분 */
 
 .slide-bg{
+    width:100%;
     position:relative;
     display:flex;
     justify-content: center;
     align-items:center;
+    overflow: hidden;
 }
 .home-intro .r-btn{
     position:absolute;
@@ -35,9 +37,7 @@
     background-color:#c40352;
     border:none;
 }
-.slide-bg .banner-bg{
-    width:100%; height:92vh;
-}
+
 .slide-bg .slide-content{
     position:absolute;
     font-family: "Elice Digital Baeum",sans-serif;
@@ -60,24 +60,31 @@
     font-size: 1.2em;
     color: #6f7071;
 }
-
+.slide-bg-img-slide{
+    display:flex;
+    
+}
+.slide-bg-img-slide{
+    width:100%;
+}
+.slide-bg-img-slide div{width:100%; height:95vh; transform:translateY(-4%);}
 
 
 
 .slink-bar{
     position:absolute;
-    bottom:60px;
+    bottom:150px;
     width:100%;
     height:7px;
     background:rgba(255,255,255,0.5);
     overflow:hidden;
+  
 }
 .slink-bar span{
     position:absolute;
     width:25%;
     height:7px;
     background:#c40352;
-
     animation:span-ani1 10s infinite;
 }
 @keyframes span-ani1{
@@ -90,7 +97,7 @@
 
 .com-ideo{
     width:70%;margin:0 auto;
-    transform: translateY(-50%);
+    transform: translateY(-165%);
     background:#c40352;
     border-radius: 30px;
 
@@ -194,6 +201,7 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
+    flex-wrap: wrap;
     background-color:#fff;
     width:70%;
     margin:130px auto 50px;
@@ -273,7 +281,7 @@
 
 
 
-.home-con1 .container2 > ul > li{}
+
 .home-con1 .container2 > ul > li > span{
     position:absolute;
     width:100%; height:100%;
@@ -606,108 +614,100 @@
 
 
 
-/* footer */
-footer{
-    width:100%;
-    margin:0 auto;
-}
-.footer-mn1{
-    position:relative;
-    left:0; top:0;
-    margin:80px 0 50px;
-}
-.footer-mn1::after{
-    content:'';
-    position:absolute; left:0; top:50%;
-    display:inline-block;
-    background-color: #a8a9ab;
-    width:100%;
-    height:1px;
-    transform: translateY(100%);
-    z-index:-1;
-}
-
-.footer-mn1 > ul{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    margin:80px 10% -13px;
-    background-color:#fff;
-}
-.footer-mn1 > span{
-    position:absolute;
-    display:inline-block;
-    background-color: #a8a9ab;
-    width:100%;
-    height:1px;
-    transform: translateY(100%);
-    z-index:-1;
-}
-.footer-mn1 > ul > li{
-    font-weight:lighter;
-    color:#6f7071;
-    font-size:1rem;
-}
 
 
-.footer-mn2{
-    position:relative;
-    left: 0; top:0;
-    width:100%; height:120px;
-    background-color:#c40452;
-}
-.footer-mn2 ul{
-    width:100%;
-    display:flex;
-    justify-content: center;
-}
-.footer-mn2 ul li{
-    padding:0 7.5%;
-    margin-top:20px;
-    position:relative;
-}
-.footer-mn2 ul li::after{
-    content:'';
-    position:absolute;
-    right:0; top:10%;
-    border-right:1px solid #ddd;
-    width:1px; height:70px;
-}
-.footer-mn2 ul li:last-child::after{border:none;}
+@media (max-width:767px) {
+    main{width:100%;}
+    .r-btn, .r-btn2, .r-btn3, .r-btn4{display:none;}
+    .home-intro {width:100%; overflow: hidden;}
+    .home-intro .slide-bg{width:260%; transform:translateX(-30%);}
+    .login-menu {
+        position:relative;
+        left:-20%; 
+       transform: translateY(200%);
+    }
 
-.footer-mn2 ul li .counsel{
-    display:flex;
-    flex-direction: column;
-    justify-content:left;
-    color:#fff;
-}
-.footer-mn2 ul li .counsel > span{font-size:1.5rem; font-weight:200;}
-.footer-mn2 ul li .counsel > strong{font-size:2.5rem;}
+   .com-ideo{width:100%; border-radius:0; height:60px; transform:translateY(0%)}
+   .com-ideo ul{transform:translateY(-13%)}
 
 
-.footer-mn2 ul li .counsel-time{
-    display:flex;
-    flex-direction: column;
-    justify-content:left;
-    color:#fff;
-}
-.footer-mn2 ul li .counsel-time > span:nth-child(1){font-size:1.5rem; font-weight:200; padding-bottom:.2rem;}
 
-.footer-mn2 ul li .footer-web{transform: translateY(140%);}
-.footer-mn2 ul li .footer-web > a{
-    background-color: #fff;
-    padding:15px 35px;
-    border-radius: 15px;
-    color:#c40452;
-    font-size:1rem;
-    font-weight:600;
-    margin:0px 10px 0px 0px;
+   .con1-mn ul li{
+       width:130px;
+       text-align: center;
+       margin:10px auto;
+    }
+
+
+    .home-con1{ 
+        width:100%; margin:10vh auto;
+        height:100vh;
+        position:relative;
+    }
+    .home-con1 .container2 ul{
+      display:flex;
+      flex-wrap: wrap;
+      margin-top:10px;
+  }
+    .home-con1 .container2 ul li{margin-top:15px;}
+    .home-con1 .container2 > ul > li:nth-child(3){
+        width:220px; height:240px;
+      }
+    .home-con1 .container2 > ul > li:nth-child(3):hover span{
+        opacity:1;
+    }
+    .home-con1 .container2 > ul > li:nth-child(3) span{
+        position:absolute;
+        width:100%; height:100%;
+        background-color:rgba(196,8,32,.5);
+        transform:translate(-50% -50%);
+        display:flex;
+        flex-direction:column;
+        justify-content:top;
+        align-items:center;
+        padding:20px auto 0px;
+        opacity:0;
+        transition:0.5s;
+  }
+    .home-con1 .container2 > ul > li:nth-child(3) > span > img{
+        transform: scale(70%);
+        margin:20px auto 0;
+        width:50%;
+    }
+    .home-con1 .container2 > ul > li:nth-child(3) > span > small{
+        color:#fff;
+        font-size:1rem;
+        margin: 25px auto;
+        text-align:center;
+        font-weight:600;
+    }
+    .home-con1 .container2 > ul > li:nth-child(3) > span > a{
+        position:absolute;
+        bottom:0;
+        width:80px;
+        height:20px;
+        color:#fff;
+        font-size:.7rem;
+        font-weight:300;
+        border:.3px solid #fff;
+        text-align:center;
+        padding-top:2px;
+        margin:0 auto 20px;
+    }
+    .home-con1 .container2 > ul > li:nth-child(5){display: none;}
+
+
+
+
+    .home-con3{
+        width:100%; margin:20vh auto;
+        height:100vh;
+        position:relative;
+    }
+
 }
-.footer-mn2 ul li:nth-child(3){border:none;}
-.footer-mn2 .top-btn{
-    position:absolute;
-    right:0;
-    bottom:0;
-    margin:0px 20px 20px 0px;
-}
-.footer-mn2 .top-btn >img{width:90%; height:90%;}
+
+
+
+
+
