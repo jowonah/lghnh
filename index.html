@@ -26,6 +26,9 @@
 
     <title>LG생활건강</title>
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./javascript/slick.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <!-- header -->
@@ -135,16 +138,32 @@
     <main id="main" class="main">
         <div class="home-intro" id="home-intro">
             <div class="slide-bg" id="slide-bg">
-                <img src="img/visualMain.jpg" class="banner-bg" id="banner-bg" alt="banner-bg">
+                <div class="slide-bg-img-slide slider">
+                    <div>
+                        <img src="img/visualMain.jpg" class="banner-bg" id="banner-bg" alt="banner-bg">
+                    </div>
+                    <div>
+                        <img src="img/visualMain.jpg" class="banner-bg" id="banner-bg" alt="banner-bg">
+                    </div>
+                    <div>
+                        <img src="img/visualMain.jpg" class="banner-bg" id="banner-bg" alt="banner-bg">
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(".slide-bg-img-slide").slick({
+                      arrows:false,
+                      dots: true,
+                      infinite: true,
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      autoplay:true,
+                      autoplaySpeed:2500,
+                      speed:1000
+                    });
+              </script>
                 <div class="slide-content" id="slide-content">
                     <h2>브런치<small>가 제격인</small> 계절</h2>
                     <p>LG생활건강의 제품들과 함께 멋진 브런치를 가져보세요!</p>
-                </div>
-                <div class="r-btn">
-                    <a href="#home-intro"></a>
-                    <a href="#home-con1"></a>
-                    <a href="#home-con3"></a>
-                    <a href="#home-con2"></a>
                 </div>
                 <div class="slink-bar">
                     <span></span>
