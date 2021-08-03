@@ -1,0 +1,16 @@
+{
+    "work":[
+        {
+            "title":"Beautiful",
+            "photo":"img/ideo-img1.jpg"
+        },
+        {
+            "title":"Healthy",
+            "photo":"img/ideo-img2.jpg"
+        },
+        {
+            "title":"Refreshing",
+            "photo":"img/ideo-img3.jpg"
+        }
+    ]
+}
