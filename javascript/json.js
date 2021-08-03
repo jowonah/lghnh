@@ -23,9 +23,11 @@ function index(){
                 tagList =`<div><img src="${photo}"></div>`;
                 popup.innerHTML = tagList;
             }
+           
         }
          popup.addEventListener('click',function(){
                 popup.style = 'display:none';
+                
             })
 }
 window.onload = index;
